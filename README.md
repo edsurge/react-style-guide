@@ -23,6 +23,25 @@ static propTypes = {
 };
 ```
 
+## Use functional components if the component only has `render`
+
+#### No:
+
+```
+export default class Foo extends Component {
+  render () {
+    return <div></div>
+  }
+}
+```
+
+
+#### Yes:
+export default ({ ... }) => (
+  <div></div>
+)
+
+
 -----------------------------------------------------------------------
 
 ![Redux](https://cloud.githubusercontent.com/assets/992008/12514962/c5501bce-c0da-11e5-93b2-5af0ed807061.png)
