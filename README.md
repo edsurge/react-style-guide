@@ -63,10 +63,12 @@ export default class Foo extends Component {
 
 
 #### Yes:
+
+```js
 export default ({ ... }) => (
   <div></div>
 )
-
+```
 
 -----------------------------------------------------------------------
 
