@@ -2,6 +2,24 @@
 
 ![React](https://cloud.githubusercontent.com/assets/992008/12514949/baf26484-c0da-11e5-8ffa-b4e6be7d62ad.png)
 
+## Use singular component class names
+
+No need to follow Rails's convention here.
+
+#### No:
+
+```js
+class ItemsIndexPage extends ...
+class ItemsList extends ...
+```
+
+#### Yes:
+
+```js
+class ItemIndexPage extends ...
+class ItemList extends
+```
+
 ## Skip `isRequired` for `propTypes`
 
 - Validating w/ `isRequired` has not been useful for our codebase. Remove them.
