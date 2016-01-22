@@ -4,7 +4,8 @@
 
 ## Use singular component class names
 
-No need to follow Rails's convention here.
+- No need to follow Rails's convention here.
+- For lists of things, use `ItemList` instead of `Items` to be more clear.
 
 #### No:
 
@@ -18,6 +19,13 @@ class ItemsList extends ...
 ```js
 class ItemIndexPage extends ...
 class ItemList extends
+```
+
+#### Yes (Exception):
+
+```js
+// Because HubspotDealListPage might be too verbose
+class HubspotDealsPage extends ...
 ```
 
 ## Skip `isRequired` for `propTypes`
