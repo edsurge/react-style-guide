@@ -65,9 +65,13 @@ export default class Foo extends Component {
 #### Yes:
 
 ```js
-export default ({ ... }) => (
+const Foo ({ ... }) => (
   <div></div>
 )
+
+// Better to name a class instead of using an anonymous function
+// so it can be debugged easily on devtools
+export default Foo
 ```
 
 -----------------------------------------------------------------------
